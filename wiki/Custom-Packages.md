@@ -12,11 +12,10 @@ By default the build system will generate user packages and both DKMS and kmod s
 
 Be aware that when building directly from a git repository you must first run the *autogen.sh* script to create the *configure* script. This will require installing the GNU autotools packages for your distribution.  In addition you must install all the necessary development tools and headers for your distribution.
 
-* [Red Hat and CentOS](#red-hat-and-centos)
+* [Red Hat, CentOS and Fedora](#red-hat-centos-and-fedora)
 * [Debian and Ubuntu](#debian-and-ubuntu)
-* [Fedora](#fedora)
 
-## Red Hat and CentOS
+## Red Hat, CentOS and Fedora
 
 Make sure that the required packages are installed:
 
@@ -64,7 +63,9 @@ $ sudo yum localinstall *.<arch>.rpm
 
 ### kABI-tracking kmod
 
-The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  Enterprise Linux distributions such as RHEL and CentOS provide this but faster moving distributions like Fedora do not.  The build system also does not support building kABI-tracking deb packages.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
+The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
+
+**NOTE:** This type of build package is not available for Fedora.
 
 ```
 $ cd spl
@@ -79,7 +80,7 @@ $ make -j1 pkg-utils pkg-kmod
 $ sudo yum localinstall *.<arch>.rpm
 ```
 
-### Debian and Ubuntu
+## Debian and Ubuntu
 
 Make sure that the required packages are installed:
 
@@ -91,7 +92,7 @@ $ sudo apt-get libselinux-dev libudev-dev libssl-dev parted lsscsi wget ksh gdeb
 
 [Get the source code](#get-the-source-code).
 
-## kmod
+### kmod
 
 The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
 
@@ -107,53 +108,7 @@ $ make -j1 deb
 $ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
 ```
 
-### Fedora
-
-Make sure that the required packages are installed:
-
-```
-$ sudo dnf groupinstall "C Development Tools and Libraries"
-$ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel
-$ sudo dnf install libselinux-devel libudev-devel openssl-devel rpm-build
-```
-
-[Get the source code](#get-the-source-code)
-
-## DKMS
-
-Building rpm-based DKMS and user packages can be done as follows:
-
-```
-$ cd spl
-$ ./configure
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils rpm-dkms
-$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
-$ cd ../zfs
-$ ./configure --with-config=srpm
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils rpm-dkms
-$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
-```
-
-## kmod
-
-The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
-
-```
-$ cd spl
-$ ./configure
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
-$ cd ../zfs
-$ ./configure
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
-```
-
-### Get the Source Code
+## Get the Source Code
 
 If you want to use the official released tarballs, then use the following commands to fetch and prepare the source.
 
