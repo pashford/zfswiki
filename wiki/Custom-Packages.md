@@ -68,7 +68,8 @@ Install the spl packages.  They are required dependencies to build zfs in the n
 For RHEL, Centos and Fedora:
 
 ```
-$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm```
+$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
+```
 
 Next change to the zfs directory and repeat the same process.
 
