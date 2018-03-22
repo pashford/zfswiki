@@ -176,4 +176,5 @@ For RHEL and Centos:
 $ sudo yum localinstall *.<arch>.rpm
 ```
 
-[release]: https://github.com/zfsonlinux/zfs/release[git]: https://github.com/zfsonlinux/zfs
+[release]: https://github.com/zfsonlinux/zfs/release
+[git]: https://github.com/zfsonlinux/zfs
