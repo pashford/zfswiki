@@ -12,9 +12,9 @@ By default the build system will generate user packages and both DKMS and kmod s
 
 Be aware that when building directly from a git repository you must first run the *autogen.sh* script to create the *configure* script. This will require installing the GNU autotools packages for your distribution.  In addition you must install all the necessary development tools and headers for your distribution.
 
-* [Red Hat and CentOS](red-hat-and-centos)
-* [Debian and Ubuntu](debian-and-ubuntu)
-* [Fedora](fedora)
+* [Red Hat and CentOS](#red-hat-and-centos)
+* [Debian and Ubuntu](#debian-and-ubuntu)
+* [Fedora](#fedora)
 
 ### Red Hat and CentOS
 
