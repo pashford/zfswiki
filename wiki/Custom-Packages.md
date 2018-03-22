@@ -32,6 +32,7 @@ $ sudo yum install libselinux-devel libudev-devel openssl-devel
 Building rpm-based DKMS and user packages can be done as follows:
 
 ```
+$ find spl zfs -name \*.ko -delete
 $ cd spl
 $ ./configure
 $ make -s -j$(nproc)
@@ -49,6 +50,7 @@ $ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
 The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
 
 ```
+$ find spl zfs -name \*.ko -delete
 $ cd spl
 $ ./configure
 $ make -s -j$(nproc)
@@ -68,6 +70,7 @@ The process for building kABI-tracking kmods is almost identical to for building
 **NOTE:** This type of package is not available for Fedora.
 
 ```
+$ find spl zfs 0name \*.ko -delete
 $ cd spl
 $ ./configure --with-spec=redhat
 $ make -s -j$(nproc)
@@ -97,6 +100,7 @@ $ sudo apt-get libselinux-dev libudev-dev libssl-dev parted lsscsi wget ksh gdeb
 The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
 
 ```
+$ find spl zfs -name \*.ko -delete
 $ cd spl$ ./configure
 $ make -s -j$(nproc)
 $ make -j1 deb
