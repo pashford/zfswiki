@@ -26,7 +26,55 @@ $ sudo yum install kernel-devel zlib-devel libattr-devel libuuid-devel libblkid-
 $ sudo yum install libselinux-devel libudev-devel openssl-devel
 ```
 
-[Get the source code](get-the-source-code).
+[Get the source code](#get-the-source-code).
+
+## DKMS
+
+Building rpm-based DKMS and user packages can be done as follows:
+
+```
+$ cd spl
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils rpm-dkms
+$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
+$ cd ../zfs
+$ ./configure --with-config=srpm
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils rpm-dkms
+$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
+```
+
+## kmod
+
+The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
+
+```
+$ cd spl
+$ ./configure$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
+$ cd ../zfs
+$ ./configure$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod$ sudo yum localinstall *.<arch>.rpm
+```
+
+## kABI-tracking kmod
+
+The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  Enterprise Linux distributions such as RHEL and CentOS provide this but faster moving distributions like Fedora do not.  The build system also does not support building kABI-tracking deb packages.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
+
+```
+$ cd spl
+$ ./configure --with-spec=redhat
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
+$ cd ../zfs
+$ ./configure --with-spec=redhat
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
+```
 
 ### Debian and Ubuntu
 
@@ -37,7 +85,22 @@ $ sudo apt-get install build-essential autoconf libtool gawk alien fakeroot gdeb
 $ sudo apt-get install linux-headers-$(uname -r) zlib1g-dev uuid-dev libattr1-dev libblkid-dev
 $ sudo apt-get libselinux-dev libudev-dev libssl-dev parted lsscsi wget ksh gdebi
 ```
-[Get the source code](get-the-source-code).
+
+[Get the source code](#get-the-source-code).
+
+## kmod
+
+The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
+
+```
+$ cd spl$ ./configure$ make -s -j$(nproc)
+$ make -j1 deb
+$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
+$ cd ../zfs
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 deb$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
+```
 
 ### Fedora
 
@@ -49,7 +112,9 @@ $ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-
 $ sudo dnf install libselinux-devel libudev-devel openssl-devel rpm-build
 ```
 
-[Get the source code](get-the-source-code)
+[Get the source code](#get-the-source-code)
+
+
 
 ### Get the Source Code
 
@@ -75,128 +140,6 @@ $ cd ..
 ```
 
 Once the source has been prepared you'll need to decide what kind of packages you're building and jump the to appropriate section below.  Note that not all package types are supported for all platforms.
-
-## DKMS (rpm-only)
-Building rpm-based DKMS and user packages can be done as follows.  However, be aware that the build system currently does not support building deb-based DKMS packages.
-
-```
-$ cd spl$ ./configure
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils rpm-dkms
-```
-
-Install the spl packages.  They are required dependencies to build zfs in the next step.
-
-For RHEL, Centos and Fedora:
-
-```
-$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
-```
-
-Next change to the zfs directory and repeat the same process.
-
-```
-$ cd ../zfs
-$ ./configure --with-config=srpm
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils rpm-dkms
-```
-
-For RHEL, Centos and Fedora:
-
-```
-$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
-```
-
-## kmod (rpm and deb)
-The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
-
-```
-$ cd spl
-$ ./configure
-$ make -s -j$(nproc)
-```
-
-For RHEL, Centos, and Fedora:
-
-```
-$ make -j1 pkg-utils pkg-kmod
-```
-
-For Debian and Ubuntu:
-
-```
-$ make -j1 deb
-```
-
-Install the spl packages.  They are required dependencies to build zfs in the next step.
-
-For Debian and Ubuntu:
-
-```
-$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
-```
-
-For RHEL, Centos, and Fedora:
-
-```
-$ sudo yum localinstall *.<arch>.rpm
-```
-
-Next change to the zfs directory and repeat the same process.
-
-```
-$ cd ../zfs
-$ ./configure
-$ make -s -j$(nproc)
-```
-
-For RHEL, Centos, and Fedora:
-
-```
-$ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
-```
-
-For Debian and Ubuntu:
-
-```
-$ make -j1 deb
-$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
-```
-
-## kABI-tracking kmod (rpm-only)
-
-The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  Enterprise Linux distributions such as RHEL and CentOS provide this but faster moving distributions like Fedora do not.  The build system also does not support building kABI-tracking deb packages.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
-
-```
-$ cd spl
-$ ./configure --with-spec=redhat
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils pkg-kmod
-```
-
-Install the spl packages.  They are required dependencies to build zfs in the next step.
-For RHEL and Centos:
-
-```
-$ sudo yum localinstall *.<arch>.rpm
-```
-
-Next change to the zfs directory and repeat the same process.
-
-```
-$ cd ../zfs
-$ ./configure --with-spec=redhat
-$ make -s -j$(nproc)
-$ make -j1 pkg-utils pkg-kmod
-```
-
-For RHEL and Centos:
-
-```
-$ sudo yum localinstall *.<arch>.rpm
-```
 
 [release]: https://github.com/zfsonlinux/zfs/release
 [git]: https://github.com/zfsonlinux/zfs
