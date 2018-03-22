@@ -65,7 +65,7 @@ $ sudo yum localinstall *.<arch>.rpm
 
 The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
 
-**NOTE:** This type of build package is not available for Fedora.
+**NOTE:** This type of package is not available for Fedora.
 
 ```
 $ cd spl
