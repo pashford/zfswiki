@@ -114,7 +114,39 @@ $ sudo dnf install libselinux-devel libudev-devel openssl-devel rpm-build
 
 [Get the source code](#get-the-source-code)
 
+## DKMS
 
+Building rpm-based DKMS and user packages can be done as follows:
+
+```
+$ cd spl
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils rpm-dkms
+$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
+$ cd ../zfs
+$ ./configure --with-config=srpm
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils rpm-dkms
+$ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
+```
+
+## kmod
+
+The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
+
+```
+$ cd spl
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
+$ cd ../zfs
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
+```
 
 ### Get the Source Code
 
