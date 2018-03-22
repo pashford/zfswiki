@@ -16,7 +16,7 @@ Be aware that when building directly from a git repository you must first run th
 * [Debian and Ubuntu](#debian-and-ubuntu)
 * [Fedora](#fedora)
 
-### Red Hat and CentOS
+## Red Hat and CentOS
 
 Make sure that the required packages are installed:
 
@@ -28,7 +28,7 @@ $ sudo yum install libselinux-devel libudev-devel openssl-devel
 
 [Get the source code](#get-the-source-code).
 
-## DKMS
+### DKMS
 
 Building rpm-based DKMS and user packages can be done as follows:
 
@@ -45,21 +45,24 @@ $ make -j1 pkg-utils rpm-dkms
 $ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
 ```
 
-## kmod
+### kmod
 
 The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
 
 ```
 $ cd spl
-$ ./configure$ make -s -j$(nproc)
+$ ./configure
+$ make -s -j$(nproc)
 $ make -j1 pkg-utils pkg-kmod
 $ sudo yum localinstall *.<arch>.rpm
 $ cd ../zfs
-$ ./configure$ make -s -j$(nproc)
-$ make -j1 pkg-utils pkg-kmod$ sudo yum localinstall *.<arch>.rpm
+$ ./configure
+$ make -s -j$(nproc)
+$ make -j1 pkg-utils pkg-kmod
+$ sudo yum localinstall *.<arch>.rpm
 ```
 
-## kABI-tracking kmod
+### kABI-tracking kmod
 
 The process for building kABI-tracking kmods is almost identical to for building normal kmods.  However, it will only produce binaries which can be used by multiple kernels if the distribution supports a stable kABI.  Enterprise Linux distributions such as RHEL and CentOS provide this but faster moving distributions like Fedora do not.  The build system also does not support building kABI-tracking deb packages.  In order to request kABI-tracking package the *--with-spec=redhat* option must be passed to configure.
 
@@ -93,13 +96,15 @@ $ sudo apt-get libselinux-dev libudev-dev libssl-dev parted lsscsi wget ksh gdeb
 The key thing to know when building a kmod package is that a specific Linux kernel must be specified. At configure time the build system will make an educated guess as to which kernel you want to build against. However, if configure is unable to locate your kernel development headers, or you want to build against a different kernel, you must specify the exact path with the *--with-linux* and *--with-linux-obj* options.
 
 ```
-$ cd spl$ ./configure$ make -s -j$(nproc)
+$ cd spl$ ./configure
+$ make -s -j$(nproc)
 $ make -j1 deb
 $ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
 $ cd ../zfs
 $ ./configure
 $ make -s -j$(nproc)
-$ make -j1 deb$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
+$ make -j1 deb
+$ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
 ```
 
 ### Fedora
