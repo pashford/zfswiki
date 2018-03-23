@@ -9,6 +9,10 @@ The official source for ZFS on Linux is maintained at GitHub by the [zfsonlinux]
 
 The first thing you'll need to do is prepare your environment by installing a full development tool chain.  In addition, development headers for both the kernel and the following libraries must be available: **zlib, libattr, libuuid, libblkid, selinux, and libudev**.  Finally, if you wish to run the ZFS Test Suite **ksh** must be installed.
 
+For RHEL and CentOS:
+```$ sudo yum groupinstall "Development Tools"$ sudo yum install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel$ sudo yum install libudev-devel openssl-devel parted lsscsi ksh```
+For Fedora:
+```$ sudo dnf groupinstall "C Development Tools and Libraries"$ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel$ sudo dnf install libudev-devel openssl-devel elfutils-libelf-develsudo parted lsscsi ksh```
 
 For Debian and Ubuntu:
 For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:
