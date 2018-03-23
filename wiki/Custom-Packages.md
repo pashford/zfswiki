@@ -39,7 +39,7 @@ $ make -s -j$(nproc)
 $ make -j1 pkg-utils rpm-dkms
 $ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
 $ cd ../zfs
-$ ./configure --with-config=srpm
+$ ./configure
 $ make -s -j$(nproc)
 $ make -j1 pkg-utils rpm-dkms
 $ sudo yum localinstall *.$(uname -p).rpm *.noarch.rpm
@@ -55,12 +55,12 @@ $ cd spl
 $ ./configure
 $ make -s -j$(nproc)
 $ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
+$ sudo yum localinstall *.$(uname -p).rpm
 $ cd ../zfs
 $ ./configure
 $ make -s -j$(nproc)
 $ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
+$ sudo yum localinstall *.$(uname -p).rpm
 ```
 
 ### kABI-tracking kmod
@@ -75,12 +75,12 @@ $ cd spl
 $ ./configure --with-spec=redhat
 $ make -s -j$(nproc)
 $ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
+$ sudo yum localinstall *.$(uname -p).rpm
 $ cd ../zfs
 $ ./configure --with-spec=redhat
 $ make -s -j$(nproc)
 $ make -j1 pkg-utils pkg-kmod
-$ sudo yum localinstall *.<arch>.rpm
+$ sudo yum localinstall *.$(uname -p).rpm
 ```
 
 ## Debian and Ubuntu
@@ -137,5 +137,5 @@ $ cd ..
 
 Once the source has been prepared you'll need to decide what kind of packages you're building and jump the to appropriate section below.  Note that not all package types are supported for all platforms.
 
-[release]: https://github.com/zfsonlinux/zfs/release
+[release]: https://github.com/zfsonlinux/zfs/releases/latest
 [git]: https://github.com/zfsonlinux/zfs
