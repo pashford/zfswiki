@@ -114,7 +114,9 @@ $ for file in *.deb; do sudo gdebi -q --non-interactive $file; done
 
 ## Get the Source Code
 
-If you want to use the official released tarballs, then use the following commands to fetch and prepare the source.
+### Released Tarball
+
+The released tarball contains the latest fully tested and released version of ZFS.  This is the preferred source code location for use in production systems.  If you want to use the official released tarballs, then use the following commands to fetch and prepare the source.
 
 ```
 $ wget http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-x.y.z.tar.gz
@@ -123,7 +125,9 @@ $ tar -xzf spl-x.y.z.tar.gz
 $ tar -xzf zfs-x.y.z.tar.gz
 ```
 
-If instead you would like to use the git version, you can clone it from Github and prepare the source like this.
+### Git Master Branch
+
+The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  If you would like to use the git version, you can clone it from Github and prepare the source like this.
 
 ```
 $ git clone https://github.com/zfsonlinux/spl.git
