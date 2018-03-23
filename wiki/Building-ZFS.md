@@ -83,7 +83,7 @@ $ make -s -j$(nproc)
 
 After the software has been built, one of three tasks is usually performed:
 
-* **[Build packages for distrubition][[Custom-Packages]]**
+* **[Build packages for distrubition][[custom-packages]]**
 * **[Test from Build Directory](#test-from-build-directory)**
 * **[Install for Production](#install-for-production)**
 
