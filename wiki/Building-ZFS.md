@@ -37,7 +37,7 @@ $ sudo dnf install libudev-devel openssl-devel elfutils-libelf-develsudo parted 
 
 There are two options for building ZFS on Linux, the correct one largely depends on your requirements.
 
-* **Packages**: Often it can be useful to build custom packages from git which can be installed on a system.  This is the best way to perform integration testing with systemd, dracut, and udev.  The downside to using packages it is greatly increases the time required to build, install, and test a change.  See the [[custom-packages]] page for additional information on building packages.
+* **Packages**: Often it can be useful to build custom packages from git which can be installed on a system.  This is the best way to perform integration testing with systemd, dracut, and udev.  The downside to using packages it is greatly increases the time required to build, install, and test a change.  See the [Custom Packages][custom-packages] page for additional information on building packages.
 
 * **In-tree**: Development can be done entirely in the SPL and ZFS source trees.  This speeds up development by allowing developers to rapidly iterate on a patch.  When working in-tree developers can leverage incremental builds, load/unload kernel modules, execute utilities, and verify all their changes with the ZFS Test Suite.
 
@@ -83,7 +83,7 @@ $ make -s -j$(nproc)
 
 After the software has been built, one of three tasks is usually performed:
 
-* **[Build packages for distrubition][[custom-packages]]**
+* **[Build packages for distrubition][custom-packages]**
 * **[Test from Build Directory](#test-from-build-directory)**
 * **[Install for Production](#install-for-production)**
 
@@ -135,3 +135,4 @@ In some instances, installation from locally compiled source will be preferred o
 [zfs-repo]: https://github.com/zfsonlinux/zfs
 [buildbot]: http://build.zfsonlinux.org/
 [zts-readme]: https://github.com/zfsonlinux/zfs/tree/master/tests
+[custom-packages]: https://github.com/zfsonlinux/zfs/wiki/Custom-Packages
