@@ -1,36 +1,25 @@
 ## GitHub Repositories
 
-The official source for ZFS on Linux is maintained at GitHub by the [zfsonlinux][zol-org] organization.  The project consists of two primary git repositories named [spl][spl-repo] and [zfs][zfs-repo], both are required to build ZFS on Linux.  
+The official source for ZFS on Linux is maintained at GitHub by the [zfsonlinux][zol-org] organization.  The project consists of the two git repositories [spl][spl-repo] and [zfs][zfs-repo], both of which are required to build ZFS on Linux.  
 
-* **SPL**: The SPL is thin shim layer which is responsible for implementing the fundamental interfaces required by OpenZFS.  It's this layer which allows OpenZFS to be used across multiple platforms.
+* **SPL**: The SPL (Solaris Portability Library) is thin shim layer which is responsible for implementing the fundamental interfaces required by OpenZFS.  This layer allows OpenZFS to be used across multiple platforms.
 * **ZFS**: The ZFS repository contains a copy of the upstream OpenZFS code which has been adapted and extended for Linux.  The vast majority of the core OpenZFS code is self-contained and can be used without modification.
 
 ## Installing Dependencies
 
 The first thing you'll need to do is prepare your environment by installing a full development tool chain.  In addition, development headers for both the kernel and the following libraries must be available: **zlib, libattr, libuuid, libblkid, selinux, and libudev**.  Finally, if you wish to run the ZFS Test Suite **ksh** must be installed.
 
+
+For Debian and Ubuntu:
+For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:
+For Debian and Ubuntu:
+For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:
 For Debian and Ubuntu:
 
 ```
 $ sudo apt-get install build-essential autoconf libtool gawk alien fakeroot linux-headers-$(uname -r)
 $ sudo apt-get install zlib1g-dev uuid-dev libattr1-dev libblkid-dev libselinux-dev libudev-dev
 $ sudo apt-get install libssl-devsudo apt-get install parted lsscsi ksh
-```
-
-For RHEL and CentOS:
-
-```
-$ sudo yum groupinstall "Development Tools"
-$ sudo yum install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel
-$ sudo yum install libudev-devel openssl-devel parted lsscsi ksh
-```
-
-For Fedora:
-
-```
-$ sudo dnf groupinstall "C Development Tools and Libraries"
-$ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel
-$ sudo dnf install libudev-devel openssl-devel elfutils-libelf-develsudo parted lsscsi ksh
 ```
 
 ## Build Options
