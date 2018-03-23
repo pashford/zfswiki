@@ -10,14 +10,21 @@ The official source for ZFS on Linux is maintained at GitHub by the [zfsonlinux]
 The first thing you'll need to do is prepare your environment by installing a full development tool chain.  In addition, development headers for both the kernel and the following libraries must be available: **zlib, libattr, libuuid, libblkid, selinux, and libudev**.  Finally, if you wish to run the ZFS Test Suite **ksh** must be installed.
 
 For RHEL and CentOS:
-```$ sudo yum groupinstall "Development Tools"$ sudo yum install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel$ sudo yum install libudev-devel openssl-devel parted lsscsi ksh```
-For Fedora:
-```$ sudo dnf groupinstall "C Development Tools and Libraries"$ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel$ sudo dnf install libudev-devel openssl-devel elfutils-libelf-develsudo parted lsscsi ksh```
 
-For Debian and Ubuntu:
-For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:
-For Debian and Ubuntu:
-For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:For Debian and Ubuntu:
+```
+$ sudo yum groupinstall "Development Tools"
+$ sudo yum install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel
+$ sudo yum install libudev-devel openssl-devel parted lsscsi ksh
+```
+
+For Fedora:
+
+```
+$ sudo dnf groupinstall "C Development Tools and Libraries"
+$ sudo dnf install kernel-devel zlib-devel libuuid-devel libattr-devel libblkid-devel libselinux-devel
+$ sudo dnf install libudev-devel openssl-devel elfutils-libelf-develsudo parted lsscsi ksh
+```
+
 For Debian and Ubuntu:
 
 ```
@@ -36,9 +43,7 @@ There are two options for building ZFS on Linux, the correct one largely depends
 
 The remainder of this page focuses on the **in-tree** option which is the recommended method of development for the majority of changes.
 
-### Developing In-Tree
-
-#### Clone from GitHub
+### Clone from GitHub
 
 Start by cloning the SPL and ZFS repositories from GitHub.  The repositories have a **master** branch for development and a series of **\*-release** branches for tagged releases.  After checking out the repository your clone will default to the master branch.  Tagged releases may be built by checking out spl/zfs-x.y.z tags with matching version numbers or matching release branches.  Avoid using mismatched versions, this can result build failures due to interface changes.
 
@@ -47,11 +52,12 @@ git clone https://github.com/zfsonlinux/spl
 git clone https://github.com/zfsonlinux/zfs
 ```
 
-#### Configure and Build
+### Configure and Build
 
 For developers working on a change always create a new topic branch based off of master.  This will make it easy to open a pull request with your change latter.  The master branch is kept stable with extensive [regression testing][buildbot] of every pull request before and after it's merged.  Every effort is made to catch defects as early as possible and to keep them out of the tree.  Developers should be comfortable frequently rebasing their work against the latest master branch.
 
 In this example we'll use the master branch and walk through a stock **in-tree** build.  As mentioned above ZFS layers on top of the SPL so its necessary to build this repository first.  Start by checking out the desired branch then build the SPL source in the tradition autotools fashion.
+
 ```
 $ cd spl
 $ git checkout master
@@ -60,7 +66,9 @@ $ ./configure
 $ make -s -j$(nproc)
 ```
 
-**tip:** `--with-linux=PATH` and `--with-linux-obj=PATH` can be passed to configure to specify a kernel installed in a non-default location.  This option is also supported when building ZFS.  **tip:** `--enable-debug` can be set to enable all ASSERTs and additional correctness tests.  This option is also supported when building ZFS.  
+**tip:** `--with-linux=PATH` and `--with-linux-obj=PATH` can be passed to configure to specify a kernel installed in a non-default location.  This option is also supported when building ZFS.
+
+**tip:** `--enable-debug` can be set to enable all ASSERTs and additional correctness tests.  This option is also supported when building ZFS.  
 
 Next move to the ZFS source tree and build it the same way.
 
@@ -80,7 +88,7 @@ After the software has been built, one of three tasks is usually performed:
 * **[Test from Build Directory](#test-from-build-directory)**
 * **[Install for Production](#install-for-production)**
 
-#### Test from Build Directory
+### Test from Build Directory
 
 There are a few helper scripts provided in the top-level scripts directory designed to aid developers working with in-tree builds.
 
@@ -110,7 +118,7 @@ $ sudo ./scripts/zfs-tests.sh -vx
 
 **tip:** The **delegate** tests will be skipped unless group read permission is set on the zfs directory and its parents.
 
-#### Install for Production
+### Install for Production
 
 In some instances, installation from locally compiled source will be preferred over use of packages (either custom or pre-built).  After the packages have been built, as described above, the following should be run.  This will install a functional and ready to use ZFS environment.
 
