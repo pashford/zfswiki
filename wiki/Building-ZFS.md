@@ -2,7 +2,7 @@
 
 The official source for ZFS on Linux is maintained at GitHub by the [zfsonlinux][zol-org] organization.  The project consists of the two git repositories [spl][spl-repo] and [zfs][zfs-repo], both of which are required to build ZFS on Linux.  
 
-* **SPL**: The SPL (Solaris Portability Library) is thin shim layer which is responsible for implementing the fundamental interfaces required by OpenZFS.  This layer allows OpenZFS to be used across multiple platforms.
+* **SPL**: The SPL (Solaris&reg; Portability Library) is thin shim layer which is responsible for implementing the fundamental interfaces required by OpenZFS.  This layer allows OpenZFS to be used across multiple platforms.
 * **ZFS**: The ZFS repository contains a copy of the upstream OpenZFS code which has been adapted and extended for Linux.  The vast majority of the core OpenZFS code is self-contained and can be used without modification.
 
 ## Installing Dependencies
