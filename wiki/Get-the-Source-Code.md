@@ -17,6 +17,8 @@ $ tar -xzf spl-x.y.z.tar.gz
 $ tar -xzf zfs-x.y.z.tar.gz
 ```
 
+As an example, the released tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```.
+
 ### Git Master Branch
 
 The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the preferred source code location and procedure for users who need a new patch/feature for their system(s).  If you would like to use the git version, you can clone it from Github and prepare the source like this.
