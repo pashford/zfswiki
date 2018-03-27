@@ -2,9 +2,9 @@
 
 This document goes over the three common ways to get the ZFS source code.  This is required for development and to create custom packages.
 
-* **[Released Tarball](#released-tarball)**
-* **[Git Master Branch](#git-master-branch)**
-* **[Fork ZFS Master Branch](#fork-zfs-master-branch)**
+* **[Released Tarball](#released-tarball)** - Released and tested
+* **[Git Master Branch](#git-master-branch)** - Latest version
+* **[Fork ZFS Master Branch](#fork-zfs-master-branch)** - Development
 
 ### Released Tarball
 
@@ -33,7 +33,7 @@ $ cd ..
 
 ### Fork ZFS Master Branch
 
-The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the preferred source code location and procecedure for ZFS development.  If you would like to so development work for the [ZFS on Linux Project][zol], you can for the Github repository and prepare the source by using the following process.
+The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the preferred source code location and procecedure for ZFS development.  If you would like to do development work for the [ZFS on Linux Project][zol], you can for the Github repository and prepare the source by using the following process.
 
 1. If you don't have a Github account, go to https://github.com/ and create one.
 1. Go to the [ZFS on Linux Project][zol] and fork both the ZFS and SPL repositories.  This will create two new repositories under your account.
