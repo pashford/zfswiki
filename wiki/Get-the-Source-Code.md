@@ -8,7 +8,7 @@ This document goes over the three common ways to get the ZFS source code.  This 
 
 ## Release Tarball
 
-The release tarball contains the latest fully tested and released version of ZFS.  This is the preferred source code location for use in production systems.  If you want to use the official release tarballs, then use the following commands to fetch and prepare the source.
+The release tarball contains a fully tested and released version of ZFS.  This is the preferred source code location for use in production systems.  If you want to use the official release tarballs, then use the following commands to fetch and prepare the source.
 
 ```
 $ wget http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-x.y.z.tar.gz
