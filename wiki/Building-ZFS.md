@@ -84,9 +84,9 @@ $ make -s -j$(nproc)
 
 After the software has been built, one of three tasks is usually performed:
 
-* **[Build packages for distrubition][custom-packages]**
-* **[Test from Build Directory](#test-from-build-directory)**
-* **[Install for Production](#install-for-production)**
+* **[Build packages for distrubition][custom-packages]** - This method is typically used to create custom packages for distribution to multiple systems.
+* **[Test from Build Directory](#test-from-build-directory)** - This method is typically used when developing ZFS code.
+* **[Install for Production](#install-for-production)** - This method is typically used for long-term testing of ZFS modifications, or for custom packages to be used on only one system.
 
 ### Test from Build Directory
 
