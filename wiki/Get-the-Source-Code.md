@@ -51,7 +51,4 @@ $ git remote add upstream https://github.com/zfsonlinux/zfs.git
 cd ..
 ```
 
-
-Once the source has been prepared you'll need to decide what kind of packages you're building and jump the to appropriate section below.  Note that not all package types are supported for all platforms.
-
 [zol]: https://github.com/zfsonlinux
