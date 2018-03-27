@@ -17,7 +17,7 @@ $ tar -xzf spl-x.y.z.tar.gz
 $ tar -xzf zfs-x.y.z.tar.gz
 ```
 
-As an example, the released tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```.
+As an example, the release tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```.
 
 ### Git Master Branch
 
