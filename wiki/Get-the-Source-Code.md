@@ -35,7 +35,7 @@ $ cd ..
 
 The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the preferred source code location and procecedure for ZFS development.  If you would like to so development work for the [ZFS on Linux Project][zol], you can for the Github repository and prepare the source by using the following process.
 
-1. If you don't have a Github account, go to [https://github.com/] and create one.
+1. If you don't have a Github account, go to https://github.com/ and create one.
 1. Go to the [ZFS on Linux Project][zol] and fork both the ZFS and SPL repositories.  This will create two new repositories under your account.
 1. Clone both of these repositories into your development system.
 1.  Enter the following commands:
@@ -51,5 +51,5 @@ cd ..
 
 
 Once the source has been prepared you'll need to decide what kind of packages you're building and jump the to appropriate section below.  Note that not all package types are supported for all platforms.
-[release]: https://github.com/zfsonlinux/zfs/releases/latest
-[git]: https://github.com/zfsonlinux/zfs
+
+[zol]: https://github.com/zfsonlinux
