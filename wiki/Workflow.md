@@ -2,6 +2,9 @@
 
 This page briefly describes the *normal* workflow for a developer working on ZFS code.
 
+The workflow used in the ZFS project is similar to the Integration-Manager Workflow from the [Pro Git][pro-git] book:
+![alt text](https://git-scm.com/book/en/v2/images/integration-manager.png "Workflow")
+
 * Install Git and set up your environment
 * Create a Github account and set it up
 * Get the source code
@@ -35,3 +38,5 @@ Other helpful pages:
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
 
 NOTE:  Many of the above pages will be removed or relocated as this page approaches completion.
+
+[pro-git]: https://git-scm.com/book/en/v2
