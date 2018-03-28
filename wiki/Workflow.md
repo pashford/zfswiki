@@ -2,8 +2,8 @@
 
 This page briefly describes the *normal* workflow for a developer working on ZFS code.
 
-* Install Git
-* Set up your GIT environment
+* Install Git and set up your environment
+* Create a Github account and set it up
 * Get the source code
 * For each Issue being worked:
    * Create a Branch
@@ -33,3 +33,5 @@ Other helpful pages:
 * https://help.github.com/articles/keeping-your-account-and-data-secure/
 * https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
+
+NOTE:  Many of the above pages will be removed or relocated as this page approaches completion.
