@@ -37,6 +37,8 @@ Other helpful pages:
 * https://help.github.com/articles/keeping-your-account-and-data-secure/
 * https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
+* https://github.com/servo/servo/wiki/Beginner%27s-guide-to-rebasing-and-squashing
+* https://github.com/tiimgreen/github-cheat-sheet
 
 NOTE:  Many of the above pages will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
