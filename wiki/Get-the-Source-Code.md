@@ -9,7 +9,7 @@ This document goes over the four common ways to get the ZFS source code.  This i
 
 ## Release Tarball
 
-The release tarball contains a fully tested and released version of ZFS.  This is one of the two preferred source code locations for use in production systems.  If you want to use the official release tarballs, then use the following commands to fetch and prepare the source.
+The release tarball contains a fully tested and released version of ZFS.  This is one of the two preferred source code locations for use in production systems.  If you need lead time for notification of changes, or want to take a detailed look at the changes, this is probably the method you should be using.  If you want to use the official release tarballs, then use the following commands to fetch and prepare the source.
 
 ```
 $ wget http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-x.y.z.tar.gz
@@ -22,7 +22,7 @@ As an example, the release tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```
 
 ## Git Release Branch
 
-The Git *release* branch contains the currently released version of the software.  This is one of the two preferred source code locations for use in production systems.  This is the software that the release tarballs are created from, and is fully tested.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
+The Git *release* branch contains the currently released version of the software.  This is one of the two preferred source code locations for use in production systems.  This is the software that the release tarballs are created from, and is fully tested.  If you can release updates as they happen, this is probably the method you should be using.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
 
 ```
 $ git clone https://github.com/zfsonlinux/spl.git
@@ -42,9 +42,9 @@ This is needed to provide the necessary script segment to auto-update.
 
 ## Git Master Branch
 
-The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the source code location and procedure for users who need a new patch/feature for their system(s).  If you would like to use the Git *master* version, you can clone it from Github and prepare the source like this.
+The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the source code location and procedure for users who must have a new patch/feature for their system(s).  If you would like to use the Git *master* version, you can clone it from Github and prepare the source like this.
 
-NOTE:  This could introduce problems into yo
+NOTE:  This could introduce problems into your environment.  Please be aware of the risks and test the software thuroughly before you take this path.  If a problem appeans, sometimes the only safe way out is to wait for a release.
 
 ```
 $ git clone https://github.com/zfsonlinux/spl.git
