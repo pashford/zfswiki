@@ -2,7 +2,7 @@
 
 This page briefly describes the *normal* workflow for a developer working on ZFS code.
 
-The workflow used in the ZFS project is similar to the Integration-Manager Workflow from the [Pro Git][pro-git] book:
+The workflow used in the ZFS project is based on the Integration-Manager Workflow from the [Pro Git][pro-git] book:
 ![alt text](https://git-scm.com/book/en/v2/images/integration-manager.png "Workflow")
 
 * Install Git and set up your environment
