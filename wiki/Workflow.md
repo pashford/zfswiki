@@ -22,7 +22,7 @@ The workflow used in the ZFS project is similar to the Integration-Manager Workf
    * Merge the PR
    * Delete the Branch
 
-There are also a few *abnormao* workflow steps that occur from time to timeL
+There are also a few *abnormal* workflow steps that occur from time to timeL
 
 * Close a Pull Request
 
@@ -37,6 +37,6 @@ Other helpful pages:
 * https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
 
-NOTE:  Many of the above pages will be removed or relocated as this page approaches completion.
+NOTE:  Many of the above pages will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
 [pro-git]: https://git-scm.com/book/en/v2
