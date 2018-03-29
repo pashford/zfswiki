@@ -67,7 +67,7 @@ The Git *master* branch contains the latest version of the software, and will pr
 $ git clone https://github.com/newzfsdeveloper/spl.git
 $ git clone https://github.com/newzfsdeveloper/zfs.git
 ```
-1. Enter the following commands to make the necessary linkage to the main repositories and prepare the source to be compiled:
+4. Enter the following commands to make the necessary linkage to the main repositories and prepare the source to be compiled:
 ```
 $ cd spl
 $ ./autogen.sh
