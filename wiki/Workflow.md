@@ -7,25 +7,26 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
 
 * Install Git and set up your environment
 * Create a Github account and set it up
-* Get the source code
+* Get the source code (Link)
 * For each Issue being worked:
-   * Create a Branch
+   * Create a Branch (Link)
    * Do:
-       * Make the appropriate change
-       * Rebase the repository
-       * Commit the changes
-       * Test the changes
-   * Until the change does what it should
-   * Squash the commits
-   * Generate a PR
-   * Update a PR
-   * Merge the PR
-   * Delete the Branch
+       * Do:
+           * Make the appropriate change
+           * Rebase the repository (Link)
+           * Commit the changes (Link)
+           * Test the changes (Link)
+       * Until the change does what it should
+       * Squash the commits (Link)
+       * Generate a PR (first pass) or Update a PR (subsequent passes) (Link - 2)
+   * Until the PR is Accepted (Link)
+   * Merge the PR (Link)
+   * Delete the Branch (Link)
 
 There are also a few *abnormal* workflow steps that occur from time to timeL
 
-* Close a Pull Request
-* Large Pull Requests
+* Close a Pull Request (Link)
+* Adding Large Features (Link)
 
 Other helpful pages:
 * https://guides.github.com/introduction/flow/
@@ -40,6 +41,6 @@ Other helpful pages:
 * https://github.com/servo/servo/wiki/Beginner%27s-guide-to-rebasing-and-squashing
 * https://github.com/tiimgreen/github-cheat-sheet
 
-NOTE:  Many of the above pages will be removed or relocated to a child page as the Workflow documentation approaches completion.
+NOTE:  Many of the above links will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
 [pro-git]: https://git-scm.com/book/en/v2
