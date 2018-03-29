@@ -11,11 +11,11 @@ The workflow used in the ZFS project is similar to the Integration-Manager Workf
 * For each Issue being worked:
    * Create a Branch
    * Do:
-       * Change the code
-       * Rebase the code
+       * Make the appropriate change
+       * Rebase the repository
        * Commit the changes
-       * Test the code
-   * Until the code works properly
+       * Test the changes
+   * Until the change does what it should
    * Squash the commits
    * Generate a PR
    * Update a PR
@@ -25,6 +25,7 @@ The workflow used in the ZFS project is similar to the Integration-Manager Workf
 There are also a few *abnormal* workflow steps that occur from time to timeL
 
 * Close a Pull Request
+* Large Pull Requests
 
 Other helpful pages:
 * https://guides.github.com/introduction/flow/
