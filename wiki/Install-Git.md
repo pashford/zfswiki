@@ -1,6 +1,6 @@
 # Install Git
 
-To work with the ZFS software on Github, it's necessary to install the Git software on your computer and set it up.  This paper covers that process for some common Linux operating systems.  Other Linux operating systems should be similar.
+To work with the ZFS software on Github, it's necessary to install the Git software on your computer and set it up.  This page covers that process for some common Linux operating systems.  Other Linux operating systems should be similar.
 
 ## Install the Software Package
 
