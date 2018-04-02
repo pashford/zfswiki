@@ -24,8 +24,6 @@ $ sudo dnf install git
 $ sudo apt install git
 ```
 
-### Installation from Source
-
 ## Configuring Git
 
 Your user name and email address must be set within Git before you can make commits to the ZFS project.  In addition, your prefered text editor should be set to whatever you would like to use.
