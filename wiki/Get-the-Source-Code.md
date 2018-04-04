@@ -3,7 +3,7 @@
 This document goes over the four common ways to get the ZFS source code.  This is required for development and to create custom packages.
 
 * **[Release Tarball](#release-tarball)** - Released and tested
-* **[Gir Release Branch](#git-release-branch)** - Released and tested
+* **[Git Release Branch](#git-release-branch)** - Released and tested
 * **[Git Master Branch](#git-master-branch)** - Latest version
 * **[Fork ZFS Master Branch](#fork-zfs-master-branch)** - Development
 
@@ -42,9 +42,9 @@ This is needed to provide the necessary script segment to auto-update.
 
 ## Git Master Branch
 
-The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the source code location and procedure for users who must have a new patch/feature for their system(s).  If you would like to use the Git *master* version, you can clone it from Github and prepare the source like this.
+The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason (usually timing, reliability or completness), weren't included in the released tarball.  This is the source code location and procedure for users who absolutely must have a new patch/feature for their system(s).  This is not  If you would like to use the Git *master* version, you can clone it from Github and prepare the source l recommended for production useike this.
 
-NOTE:  This could introduce problems into your environment.  Please be aware of the risks and test the software thuroughly before you take this path.  If a problem appeans, sometimes the only safe way out is to wait for a release.
+WARNING:  This could introduce problems (usually reliability, integrity or performance) into your environment.  Please be aware of the risks and test the software thuroughly before you take this path.  If a problem appears, sometimes the only safe way out is to wait for a release.
 
 ```
 $ git clone https://github.com/zfsonlinux/spl.git
