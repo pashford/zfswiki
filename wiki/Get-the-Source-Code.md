@@ -12,6 +12,8 @@ This document goes over the four common ways to get the ZFS source code.  This i
 The release tarball contains a fully tested and released version of ZFS.  This is one of the two preferred source code locations for use in production systems.  If you need lead time for notification of changes, or want to take a detailed look at the changes, this is probably the method you should be using.  If you want to use the official release tarballs, then use the following commands to fetch and prepare the source.
 
 ```
+$ mkdir zol
+$ cd zol
 $ wget http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-x.y.z.tar.gz
 $ wget http://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/zfs-x.y.z.tar.gz
 $ tar -xzf spl-x.y.z.tar.gz
@@ -25,6 +27,8 @@ As an example, the release tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```
 The Git *release* branch contains the currently released version of the software and all updates that have been approved for release since the last release.  When a release is made, a *tag* is added to this branch, everything in it is retested and a tarball is created.  This is one of the two preferred source code locations for use in production systems.  If you can release updates as they happen, this is probably the method you should be using.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
 
 ```
+$ mkdir zol
+$ cd zol
 $ git clone https://github.com/zfsonlinux/spl.git
 $ git clone https://github.com/zfsonlinux/zfs.git
 $ cd spl
@@ -47,6 +51,8 @@ The Git *master* branch contains the latest version of the software, and will pr
 WARNING:  This could introduce problems (usually reliability, integrity or performance) into your environment.  Please be aware of the risks and test the software thuroughly before you take this path.  If a problem appears, sometimes the only safe way out is to wait for a release.
 
 ```
+$ mkdir zol
+$ cd zol
 $ git clone https://github.com/zfsonlinux/spl.git
 $ git clone https://github.com/zfsonlinux/zfs.git
 $ cd spl
@@ -64,6 +70,8 @@ The Git *master* branch contains the latest version of the software, and will pr
 1. Go to the [ZFS on Linux Project][zol] and fork both the ZFS and SPL repositories.  This will create two new repositories under your account.  Detailed instructions can be found at https://help.github.com/articles/fork-a-repo/.
 1. Clone both of these repositories onto your development system.  As an example, if your account is *newzfsdeveloper*, the commands to clone the repositories would be:
 ```
+$ mkdir zol
+$ cd zol
 $ git clone https://github.com/newzfsdeveloper/spl.git
 $ git clone https://github.com/newzfsdeveloper/zfs.git
 ```
