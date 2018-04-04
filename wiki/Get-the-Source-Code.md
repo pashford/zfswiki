@@ -22,7 +22,7 @@ As an example, the release tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```
 
 ## Git Release Branch
 
-The Git *release* branch contains the currently released version of the software.  This is one of the two preferred source code locations for use in production systems.  This is the software that the release tarballs are created from, and is fully tested.  If you can release updates as they happen, this is probably the method you should be using.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
+The Git *release* branch contains the currently released version of the software and all updates that have been approved for release since the last release.  When a release is made, a *tag* is added to this branch, everything in it is retested and a tarball is created.  This is one of the two preferred source code locations for use in production systems.  If you can release updates as they happen, this is probably the method you should be using.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
 
 ```
 $ git clone https://github.com/zfsonlinux/spl.git
