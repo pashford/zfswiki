@@ -5,8 +5,8 @@ This page briefly describes the *normal* workflow for a developer working on ZFS
 The workflow used in the ZFS project is based on the Integration-Manager Workflow from the [Pro Git][pro-git] book:
 ![alt text](https://git-scm.com/book/en/v2/images/integration-manager.png "Workflow")
 
-* Install Git and set up your environment
-* Create a Github account and set it up
+* Install Git and set up your environment (Link)
+* Create a Github account and set it up (Link)
 * Get the source code (Link)
 * For each Issue being worked:
    * Create a Branch (Link)
