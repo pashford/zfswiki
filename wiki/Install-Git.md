@@ -4,7 +4,7 @@ To work with the ZFS software on Github, it's necessary to install the Git softw
 
 ## Install the Software Package
 
-The first step is to actually install the Git software package.  This package can be found in the repositories used by most Linux distributions.  If your distribution isn't listed here, please have a look in the [official Git documentation][git-install-linux].
+The first step is to actually install the Git software package.  This package can be found in the repositories used by most Linux distributions.  If your distribution isn't listed here, or you'd like to install from source, please have a look in the [official Git documentation][git-install-linux].
 
 ### Red Hat and CentOS
 
