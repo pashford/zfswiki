@@ -4,7 +4,7 @@
 
 The purpose of the ZFS Tuning Guide is to provide the reader with the information necessary to tune their ZFS file-systems for improved performance.
 
-Unlike most tuning guides, this is intended to be a living document, and be updated as the ZFS file-system is changed.  In addition, it will be updated as we find improved tools to analyze and tune the file-system.
+Unlike most tuning guides, this one is intended to be a living document, and be updated as the ZFS file-system is changed.  In addition, it is intended to be updated as we find and/or create improved tools to analyze and tune the file-system.
 
 ## Audience
 
