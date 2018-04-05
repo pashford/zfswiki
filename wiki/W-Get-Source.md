@@ -2,7 +2,7 @@
 
 # Get the Source Code
 
-This document goes over how a developer can get the ZFS source code for the purpose of making changes to it.  For other purposes, please see the [Get the Source Code][https://github.com/zfsonlinux/zfs/wiki/Get-the-Source-Code] page.
+This document goes over how a developer can get the ZFS source code for the purpose of making changes to it.  For other purposes, please see the [Get the Source Code][get-source] page.
 
 ## Fork Git Master Branch
 
@@ -29,3 +29,4 @@ cd ..
 ```
 
 [zol]: https://github.com/zfsonlinux
+[get-source]: https://github.com/zfsonlinux/zfs/wiki/Get-the-Source-Code
