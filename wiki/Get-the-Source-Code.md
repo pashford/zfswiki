@@ -48,7 +48,7 @@ This is needed to provide the necessary script segment to auto-update.
 
 ## Git Master Branch
 
-The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason (usually timing, reliability or completness), weren't included in the released tarball.  This is the source code location and procedure for users who absolutely must have a new patch/feature for their system(s).  This source code location is *not* recommended for production use.  If you would like to use the Git *master* version, you can clone it from Github and prepare the source for use like this.
+The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason (usually timing, reliability or completness), weren't included in the released tarball.  This is the source code location and procedure for users who absolutely must have a new patch/feature for their system(s).  This source code location is *not* recommended for production use.  If you would like to use the Git *master* version, you can clone it from Github and prepare the source by using the procedure below.
 
 **WARNING**:  Use of the Git *master* branch could introduce problems (usually reliability, integrity or performance) into your environment.  Please be aware of the risks and test the software thoroughly before you take this path.  If a problem appears, sometimes the only way to keep your data intact is to wait for a release.  In a worst-case scenario, it might not be possible to save your data.
 
