@@ -42,9 +42,22 @@ $ ./autogen.sh
 $ cd ..
 ```
 
-**How does the user know that upstream has changed?**
+At a later date, the following procedure can be used to update the source code:
 
-This is needed to provide the necessary script segment to auto-update.
+```
+$ cd zfs-on-linux
+$ cd spl
+$ git checkout spl-0.7-release
+$ git pull
+$ ./autogen.sh
+$ cd ../zfs
+$ git checkout zfs-0.7-release
+$ git pull
+$ ./autogen.sh
+$ cd ..
+```
+
+**Is the 'autogen.sh' call needed?**
 
 ## Git Master Branch
 
