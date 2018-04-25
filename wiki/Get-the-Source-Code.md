@@ -26,7 +26,7 @@ As an example, the release tarball for ZFS 0.7.6 would be ```zfs-0.7.6.tar.gz```
 
 ## Git Release Branch
 
-The Git *release* branch contains the currently released version of the software and all updates that have been approved for release since the last release.  When a release is made, a *tag* is added to this branch, everything in it is retested and a tarball is created.  If you need a fix that has been approved for release, this is the preferred source code location.  This branch isn't quite as well tested as the release tarballs, so it is preferred that they be used whenever possible.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
+The Git *release* branch contains the currently released version of the software and all updates that have been approved for release since the last release.  When a release is made, a *tag* is added to this branch, everything in it is retested and a tarball is created.  If you need a fix that has been approved for release, but not yet released, this is the preferred source code location.  This branch isn't quite as well tested as the release tarballs, so it is preferred that they be used whenever possible.  If you would like to compile directly from the Git *release* branch, please use the following procedures:
 
 ```
 $ mkdir zfs-on-linux
@@ -57,13 +57,28 @@ $ ./autogen.sh
 $ cd ..
 ```
 
+Alternatively, to get to a specific release (0.7.8 in this example), the following could be used:
+
+```
+$ cd zfs-on-linux
+$ cd spl
+$ git checkout spl-0.7.8
+$ git pull
+$ ./autogen.sh
+$ cd ../zfs
+$ git checkout zfs-0.7.8
+$ git pull
+$ ./autogen.sh
+$ cd ..
+```
+
 **Is the 'autogen.sh' call needed?**
 
 ## Git Master Branch
 
 The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason (usually timing, reliability or completness), weren't included in the released tarball.  This is the source code location and procedure for users who absolutely must have a new patch/feature for their system(s).  This source code location is *not* recommended for production use.  If you would like to use the Git *master* version, you can clone it from Github and prepare the source by using the procedure below.
 
-**WARNING**:  Use of the Git *master* branch could introduce problems (usually reliability, integrity or performance) into your environment.  Please be aware of the risks and test the software thoroughly before you take this path.  If a problem appears, sometimes the only way to keep your data intact is to wait for a release.  In a worst-case scenario, it might not be possible to save your data.
+**WARNING**:  Use of the Git *master* branch could introduce problems (reliability, integrity or performance) into your environment.  Please be aware of the risks and test the software thoroughly before you take this path.  If a problem appears, sometimes the only way to keep your data intact is to wait for a release.  It is also possible that your data could be lost.
 
 ```
 $ mkdir zfs-on-linux
