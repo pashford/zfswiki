@@ -13,7 +13,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * Do:
        * Do:
            * Make the appropriate change
-           * Rebase the repository (Link)
+           * Rebase the update (Link)
            * Commit the changes (Link)
            * Test the changes (Link)
        * Until the change does what it should
