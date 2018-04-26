@@ -13,9 +13,9 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * Do:
        * Do:
            * Make the appropriate change
+           * Test the changes (Link)
            * Rebase the update (Link)
            * Commit the changes (Link)
-           * Test the changes (Link)
        * Until the change does what it should
        * Squash the commits (Link)
        * Generate a PR (first pass) or Update a PR (subsequent passes) (Link - 2)
