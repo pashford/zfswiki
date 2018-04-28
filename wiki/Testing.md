@@ -2,7 +2,7 @@
 
 After changes are made to the ZFS on Linux software, it is necessary to test those changes.
 
-There is a complete test suite that is performed on multiple architectures and distributions when a PR is submitted.  There is also a subset of this test suite that is part of the ZFS repository.  This subset can be run on demand by ZFS developers.
+There is a complete test suite that is performed on multiple architectures and distributions when a PR is submitted.  There is also a subset of this test suite that is part of the ZFS repository for developer testing.
 
 ## Style Testing
 
@@ -44,6 +44,6 @@ $ sudo ./scripts/zloop.sh
 
 Finally, it's necessary to verify that the changes made actually do what they were intended to do.  The extent of the testing would depend on the complexity of the changes.
 
-After these changes are tested, it would be good if the testing could be automated for addition to the test suite.  A seperate Issue should be opened for the additional test.
+After the changes are tested, it would be good if the testing could be automated for addition to the test suite.  A seperate Issue should be opened for any new tests to be added to either the full test suite or to the smaller test suite distributed with ZFS.
 
 [zts-readme]: https://github.com/zfsonlinux/zfs/tree/master/tests
