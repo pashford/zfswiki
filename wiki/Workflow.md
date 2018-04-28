@@ -5,17 +5,17 @@ This page briefly describes the *normal* workflow for a developer working on ZFS
 The workflow used in the ZFS project is based on the Integration-Manager Workflow from the [Pro Git][pro-git] book:
 ![alt text](https://git-scm.com/book/en/v2/images/integration-manager.png "Workflow")
 
-* Install Git and set up your environment (Link)
-* Create a Github account and set it up (Link)
-* Get the source code (Link)
+* [Install Git and set up your environment][W-install]
+* [Create a Github account and set it up][W-github-account]
+* [Get the source code][W-get-code]
 * For each Issue being worked:
-   * Create a Branch (Link)
+   * [Create a Branch][W-create-branch]
    * Do:
        * Do:
            * Make the appropriate change
-           * Test the changes (Link)
-           * Rebase the update (Link)
-           * Commit the changes (Link)
+           * [Test the changes][W-test]
+           * [Rebase the update][W-rebase]
+           * [Commit the changes][W-commit]
        * Until the change does what it should
        * Squash the commits (Link)
        * Generate a PR (first pass) or Update a PR (subsequent passes) (Link - 2)
@@ -44,3 +44,10 @@ Other helpful pages:
 NOTE:  Many of the above links will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
 [pro-git]: https://git-scm.com/book/en/v2
+[W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Install-Git.md
+[W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Github-Account.md
+[W-get-code]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Get-Source.md
+[W-create-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Branch.md
+[W-test]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Test.md
+[W-rebase]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Rebase.md
+[W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit.md
