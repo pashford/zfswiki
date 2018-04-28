@@ -19,11 +19,11 @@ $ git clone https://github.com/newzfsdeveloper/zfs.git
 3. Enter the following commands to make the necessary linkage to the main repositories and prepare the source to be compiled:
 ```
 $ cd spl
-$ ./autogen.sh
 $ git remote add upstream https://github.com/zfsonlinux/spl.git
-$ cd ../zfs
 $ ./autogen.sh
+$ cd ../zfs
 $ git remote add upstream https://github.com/zfsonlinux/zfs.git
+$ ./autogen.sh
 cd ..
 ```
 
