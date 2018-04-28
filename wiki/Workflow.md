@@ -12,10 +12,10 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * [Create a Branch][W-create-branch]
    * Do:
        * Do:
-           * Make the appropriate change
+           * Make the appropriate changes to the software
            * [Test the changes][W-test]
-           * [Rebase the update][W-rebase]
-           * [Commit the changes][W-commit]
+           * [Rebase the changes][W-rebase] on the current *master* branch
+           * [Commit the changes][W-commit] to your *topic* branch
        * Until the change does what it should
        * Squash the commits (Link)
        * Generate a PR (first pass) or Update a PR (subsequent passes) (Link - 2)
