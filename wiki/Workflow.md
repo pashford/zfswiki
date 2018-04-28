@@ -23,7 +23,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * Merge the PR (Link)
    * Delete the Branch (Link)
 
-There are also a few *abnormal* workflow steps that occur from time to timeL
+There are also a few *abnormal* workflow steps that occur from time to time:
 
 * Close a Pull Request (Link)
 * Adding Large Features (Link)
