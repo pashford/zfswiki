@@ -1,6 +1,6 @@
 # Commit the Changes
 
-In order for your changes to be merged into the ZFS on Linux project, you must first send the changes made in your *local* repository to your *forked* repository.  This can be done with the ```git commit -sa```.  
+In order for your changes to be merged into the ZFS on Linux project, you must first send the changes made in your *topic* branch to your *local* repository.  This can be done with the ```git commit -sa```.  
 
 The ```-s``` option adds a *signed off by* line to the commit.  This *signed off by* line is an acceptence of the [License Terms][license] of the project.  This is required for the ZFS on Linux project.
 
