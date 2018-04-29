@@ -33,7 +33,6 @@ Other helpful pages:
 
 * https://guides.github.com/introduction/flow/
 * http://nvie.com/posts/a-successful-git-branching-model/
-* https://help.github.com/articles/github-flow/
 * https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
 * https://help.github.com/articles/associating-text-editors-with-git/
 * https://help.github.com/articles/keeping-your-account-and-data-secure/
