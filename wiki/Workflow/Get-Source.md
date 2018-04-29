@@ -4,12 +4,10 @@
 
 This document goes over how a developer can get the ZFS source code for the purpose of making changes to it.  For other purposes, please see the [Get the Source Code][get-source] page.
 
-## Fork Git Master Branch
+The Git *master* branch contains the latest version of the software, including changes that weren't included in the released tarball.  This is the preferred source code location and procecedure for ZFS development.  If you would like to do development work for the [ZFS on Linux Project][zol], you can fork the Github repository and prepare the source by using the following process.
 
-The Git *master* branch contains the latest version of the software, and will probably contain fixes that, for some reason, weren't included in the released tarball.  This is the preferred source code location and procecedure for ZFS development.  If you would like to do development work for the [ZFS on Linux Project][zol], you can fork the Github repository and prepare the source by using the following process.
-
-1. Go to the [ZFS on Linux Project][zol] and fork both the ZFS and SPL repositories.  This will create two new repositories under your account.  Detailed instructions can be found at https://help.github.com/articles/fork-a-repo/.
-1. Clone both of these repositories onto your development system.  This will create your local repositories.  As an example, if your account is *newzfsdeveloper*, the commands to clone the repositories would be:
+1. Go to the [ZFS on Linux Project][zol] and fork both the ZFS and SPL repositories.  This will create two new repositories (your forked repositories) under your account.  Detailed instructions can be found at https://help.github.com/articles/fork-a-repo/.
+1. Clone both of these repositories onto your development system.  This will create your local repositories.  As an example, if your Github account is *newzfsdeveloper*, the commands to clone the repositories would be:
 ```
 $ mkdir zfs-on-linux
 $ cd zfs-on-linux
