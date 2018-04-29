@@ -6,7 +6,7 @@ Github did an excellent job of documenting how to create an account.  The follow
 
 https://help.github.com/articles/signing-up-for-a-new-github-account/
 
-In addition, the following three articles might be useful:
+In addition, the following articles might be useful:
 * https://help.github.com/articles/keeping-your-account-and-data-secure/
 * https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
