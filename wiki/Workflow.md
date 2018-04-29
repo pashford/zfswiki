@@ -40,20 +40,20 @@ Other helpful pages:
 NOTE:  Many of the above links will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
 [pro-git]: https://git-scm.com/book/en/v2
-[W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Install-Git.md
-[W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Github-Account.md
-[W-get-code]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Get-Source.md
-[W-create-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Branch.md
-[W-often]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit-Often.md
-[W-test]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Test.md
-[W-rebase]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Rebase.md
-[W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit.md
-[W-squash]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Squash.md
-[W-generate]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Generate.md
-[W-update]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Update.md
-[W-accept]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Accept.md
-[W-merge]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Merge.md
-[W-conflicts]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Conflicts.md
-[W-close-PR]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Close-PR.md
-[W-large]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Large-Features.md
-[W-delete-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Delete-Branch.md
+[W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Install-Git.md
+[W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-Github-Account.md
+[W-get-code]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Get-Source.md
+[W-create-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-Branch.md
+[W-often]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Commit-Often.md
+[W-test]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Test.md
+[W-rebase]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Rebase.md
+[W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Commit.md
+[W-squash]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Squash.md
+[W-generate]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Generate-PR.md
+[W-update]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Update-PR.md
+[W-accept]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Accept-PR.md
+[W-merge]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Merge-PR.md
+[W-conflicts]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Conflicts.md
+[W-close-PR]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Close-PR.md
+[W-large]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Large-Features.md
+[W-delete-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Delete-Branch.md
