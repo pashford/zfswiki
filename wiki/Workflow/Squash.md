@@ -7,3 +7,5 @@ To squash multiple commits into a single commit, the ```git rebase -i``` command
 After the rebase is finished, another editor will appear.  Use this editor to write the commit message for the new commit.
 
 When a prompt is returned, use the ```git push -f``` command to update your Github repository.
+
+https://github.com/servo/servo/wiki/Beginner%27s-guide-to-rebasing-and-squashing
