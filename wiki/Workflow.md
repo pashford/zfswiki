@@ -22,11 +22,15 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * Until the [PR is Accepted][W-accept]
    * [Merge the PR][W-merge]
    * [Delete the Branch][W-delete-branch]
+
 There are also a few *abnormal* workflow steps that occur from time to time:
+
 * [Fix conflicts][W-conflicts]
 * [Close a PR][W-close]
 * [Adding large features][W-large]
+
 Other helpful pages:
+
 * https://guides.github.com/introduction/flow/
 * http://scottchacon.com/2011/08/31/github-flow.html
 * http://nvie.com/posts/a-successful-git-branching-model/
@@ -38,7 +42,9 @@ Other helpful pages:
 * https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
 * https://github.com/servo/servo/wiki/Beginner%27s-guide-to-rebasing-and-squashing
 * https://github.com/tiimgreen/github-cheat-sheet
+
 NOTE:  Many of the above links will be removed or relocated to a child page as the Workflow documentation approaches completion.
+
 [pro-git]: https://git-scm.com/book/en/v2
 [W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Install-Git.md
 [W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Github-Account.md
