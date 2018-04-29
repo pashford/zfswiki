@@ -34,7 +34,6 @@ Other helpful pages:
 * https://guides.github.com/introduction/flow/
 * http://nvie.com/posts/a-successful-git-branching-model/
 * https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
-* https://help.github.com/articles/adding-a-fallback-authentication-method-with-recover-accounts-elsewhere/
 * https://github.com/servo/servo/wiki/Beginner%27s-guide-to-rebasing-and-squashing
 * https://github.com/tiimgreen/github-cheat-sheet
 
