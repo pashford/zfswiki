@@ -21,7 +21,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
        * Generate a PR (first pass) or Update a PR (subsequent passes) (Link - 2)
    * Until the PR is Accepted (Link)
    * Merge the PR (Link)
-   * Delete the Branch (Link)
+   * [Delete the Branch][W-delete-branch]
 
 There are also a few *abnormal* workflow steps that occur from time to time:
 
@@ -52,3 +52,4 @@ NOTE:  Many of the above links will be removed or relocated to a child page as t
 [W-rebase]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Rebase.md
 [W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit.md
 [W-squash]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Squash.md
+[W-delete-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Delete-Branch.md
