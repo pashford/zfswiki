@@ -25,8 +25,9 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
 
 There are also a few *abnormal* workflow steps that occur from time to time:
 
+* Fix conflicts (link)
 * Close a Pull Request (Link)
-* Adding Large Features (Link)
+* Adding large features (Link)
 
 Other helpful pages:
 * https://guides.github.com/introduction/flow/
