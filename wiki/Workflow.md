@@ -32,7 +32,6 @@ There are also a few *abnormal* workflow steps that occur from time to time:
 Other helpful pages:
 
 * https://guides.github.com/introduction/flow/
-* http://scottchacon.com/2011/08/31/github-flow.html
 * http://nvie.com/posts/a-successful-git-branching-model/
 * https://help.github.com/articles/github-flow/
 * https://services.github.com/on-demand/downloads/github-git-cheat-sheet/
