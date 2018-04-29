@@ -1,12 +1,12 @@
 # Testing Changes to ZFS
 
-The code in the ZFS on Linux project is quite complex. A minor error in a change could easily create bugs in the software which could cause unforseen problems. In order to attempt to avoid this sort of problem, a test suite has been developed. This test suite is run against  multiple architectures and distributions by the Github system when a PR (Pull Request) is submitted.
+The code in the ZFS on Linux project is quite complex. A minor error in a change could easily introduce new bugs into the software, causing unforseeable problems. In an attempt to avoid this, a test suite has been developed. This test suite is run against multiple architectures and distributions by the Github system when a PR (Pull Request) is submitted.
 
-A subset of the full test suite can be run by the developer to perform a preliminary verification of their changes.
+A subset of the full test suite can be run by the developer to perform a preliminary verification of the changes in their *local* repository.
 
 ## Style Testing
 
-The first part of the testing is to verify that the software meets the project's style guidelines.  To verify that the code meets those guidelines, run ```make checkstyle``` from the local directory containing the git repository.
+The first part of the testing is to verify that the software meets the project's style guidelines.  To verify that the code meets those guidelines, run ```make checkstyle``` from the *local* repository.
 
 ## Basic Functionality Testing
 
