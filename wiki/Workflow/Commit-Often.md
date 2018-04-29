@@ -6,4 +6,4 @@ In addition, it is suggested that the changes be pushed to your forked Github re
 
 Details of this process can be found in the [Commit the changes][W-commit] page.
 
-[W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit.md
+[W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/Workload/Commit.md
