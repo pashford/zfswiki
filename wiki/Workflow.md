@@ -12,7 +12,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * [Create a Branch][W-create-branch]
    * Do:
        * Do:
-           * Make the appropriate changes to the software
+           * Make the appropriate changes to the software - Please remember to [commit often][W-often]
            * [Test the changes][W-test]
            * [Rebase the changes][W-rebase] on the current *master* branch
            * [Commit the changes][W-commit] to your *topic* branch
@@ -44,6 +44,7 @@ NOTE:  Many of the above links will be removed or relocated to a child page as t
 [W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Github-Account.md
 [W-get-code]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Get-Source.md
 [W-create-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Create-Branch.md
+[W-often]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit-Often.md
 [W-test]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Test.md
 [W-rebase]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Rebase.md
 [W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/W-Commit.md
