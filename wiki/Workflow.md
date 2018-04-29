@@ -26,7 +26,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
 There are also a few *abnormal* workflow steps that occur from time to time:
 
 * [Fix conflicts][W-conflicts]
-* [Close a PR][W-close]
+* [Close a PR][W-close-PR]
 * [Adding large features][W-large]
 
 Other helpful pages:
