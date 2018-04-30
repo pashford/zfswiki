@@ -26,7 +26,7 @@ $ sudo apt install git
 
 ## Configuring Git
 
-Your user name and email address must be set within Git before you can make commits to the ZFS project.  In addition, your prefered text editor should be set to whatever you would like to use.
+Your user name and email address must be set within Git before you can make commits to the ZFS project.  In addition, your preferred text editor should be set to whatever you would like to use.
 
 ```
 $ git config --global user.name "John Doe"
