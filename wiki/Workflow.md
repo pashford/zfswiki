@@ -20,7 +20,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
        * [Squash the commits][W-squash] **Incomplete**
        * [Generate a PR][W-generate] (first pass) or [Update a PR][W-update] (subsequent passes) **EMPTY**
    * Until the [PR is Accepted][W-accept]
-   * [Merge the PR][W-merge] **EMPTY**
+   * [Merge the PR][W-merge]
    * [Delete the Branch][W-delete-branch]
 
 There are also a few *abnormal* workflow steps that occur from time to time:
