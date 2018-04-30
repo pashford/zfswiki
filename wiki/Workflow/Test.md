@@ -14,13 +14,13 @@ The second part of the testing is to verify basic functionality.  This is to ens
 
 There are a few helper scripts provided in the top-level scripts directory designed to aid developers working with in-tree builds.
 
-* **zfs-helper.sh:** Certain functionality (i.e. /dev/zvol/) depends on the ZFS provided udev helper scripts being installed on the system.  This script can be used to create symlinks on the system from the installation location to the in-tree helper.  These links must be in place to successfully run the ZFS Test Suite.  The **-i** and **-r** options can be used to install and remove the symlinks.
+* **zfs-helper.sh:** Certain functionality (i.e. /dev/zvol/) depends on the ZFS provided udev helper scripts being installed on the system.  This script can be used to create symlinks on the system from the installation location to the in-tree helper.  These links must be in place to successfully run the ZFS Test Suite.  The `-i` and `-r` options can be used to install and remove the symlinks.
 
 ```
 $ sudo ./scripts/zfs-helpers.sh -i
 ```
 
-* **zfs.sh:** The freshly built kernel modules can be loaded using `zfs.sh`.  This script can latter be used to unload the kernel modules with the **-u** option.
+* **zfs.sh:** The freshly built kernel modules can be loaded using `zfs.sh`.  This script can latter be used to unload the kernel modules with the `-u` option.
 
 ```
 $ sudo ./scripts/zfs.sh
