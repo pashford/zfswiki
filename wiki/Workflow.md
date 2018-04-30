@@ -17,17 +17,17 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
            * [Rebase the changes][W-rebase] on the current *master* branch
            * [Commit the changes][W-commit] to your *topic* branch
        * Until the change does what it should
-       * [Squash the commits][W-squash]
-       * [Generate a PR][W-generate] (first pass) or [Update a PR][W-update] (subsequent passes)
-   * Until the [PR is Accepted][W-accept]
-   * [Merge the PR][W-merge]
+       * [Squash the commits][W-squash] **Incomplete**
+       * [Generate a PR][W-generate] (first pass) or [Update a PR][W-update] (subsequent passes) **EMPTY**
+   * Until the [PR is Accepted][W-accept] **EMPTY**
+   * [Merge the PR][W-merge] **EMPTY**
    * [Delete the Branch][W-delete-branch]
 
 There are also a few *abnormal* workflow steps that occur from time to time:
 
-* [Fix conflicts][W-conflicts]
-* [Close a PR][W-close-PR]
-* [Adding large features][W-large]
+* [Fix conflicts][W-conflicts] **EMPTY**
+* [Close a PR][W-close-PR] **EMPTY**
+* [Adding large features][W-large] **EMPTY**
 
 Other helpful pages:
 
