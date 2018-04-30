@@ -1,6 +1,6 @@
 # Workflow
 
-This page briefly describes the *normal* workflow for a developer working on ZFS code.
+This page briefly describes the *normal* workflow for a developer working on the ZFS-on-Linux project.  It is intended to help developers who are new to the project get started quickly and easily.
 
 The workflow used in the ZFS project is based on the Integration-Manager Workflow from the [Pro Git][pro-git] book:
 ![alt text](https://git-scm.com/book/en/v2/images/integration-manager.png "Workflow")
@@ -39,6 +39,7 @@ Other helpful pages:
 
 NOTE:  Many of the above links will be removed or relocated to a child page as the Workflow documentation approaches completion.
 
+[zol]: https://github.com/zfsonlinux/zfs
 [pro-git]: https://git-scm.com/book/en/v2
 [W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Install-Git.md
 [W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-Github-Account.md
