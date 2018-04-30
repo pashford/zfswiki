@@ -1,6 +1,6 @@
 # Testing Changes to ZFS
 
-The code in the ZFS on Linux project is quite complex. A minor error in a change could easily introduce new bugs into the software, causing unforseeable problems. In an attempt to avoid this, a test suite has been developed. This test suite is run against multiple architectures and distributions by the Github system when a PR (Pull Request) is submitted.
+The code in the ZFS on Linux project is quite complex. A minor error in a change could easily introduce new bugs into the software, causing unforeseeable problems. In an attempt to avoid this, a test suite has been developed. This test suite is run against multiple architectures and distributions by the Github system when a PR (Pull Request) is submitted.
 
 A subset of the full test suite can be run by the developer to perform a preliminary verification of the changes in their *local* repository.
 
@@ -44,6 +44,6 @@ $ sudo ./scripts/zloop.sh
 
 Finally, it's necessary to verify that the changes made actually do what they were intended to do.  The extent of the testing would depend on the complexity of the changes.
 
-After the changes are tested, it would be good if the testing could be automated for addition to the test suite.  A seperate Issue should be opened for any new tests to be added to either the full test suite or to the smaller test suite distributed with ZFS.
+After the changes are tested, it would be good if the testing could be automated for addition to the test suite.  A separate Issue should be opened for any new tests to be added to either the full test suite or to the smaller test suite distributed with ZFS.
 
 [zts-readme]: https://github.com/zfsonlinux/zfs/tree/master/tests
