@@ -6,3 +6,4 @@ As an example, if a developer were to implement a new low-level VDEV, the PRs mi
 1.  Add support for the new VDEV type to the include files and the kernel
 1.  Add support for the new VDEV type to the utilities that display status
 1.  Add support for the new VDEV type to the *zpool* command
+1.  Update the *man* page.
