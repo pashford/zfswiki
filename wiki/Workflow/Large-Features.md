@@ -7,3 +7,5 @@ As an example, if a developer were to implement a new low-level VDEV, the PRs mi
 1.  Add support for the new VDEV type to the utilities that display status
 1.  Add support for the new VDEV type to the *zpool* command
 1.  Update the *man* page.
+
+The above process increaases the testing exposure of the low-level changes.  In addition, it breaks a large task into smaller tasks, making it easier to do.
