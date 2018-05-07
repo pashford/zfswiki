@@ -27,7 +27,7 @@ There are also a few *abnormal* workflow steps that occur from time to time:
 
 * [Fix conflicts][W-conflicts] **EMPTY**
 * [Close a PR][W-close-PR] **Incomplete**
-* [Adding large features][W-large] **Incomplete**
+* [Adding large features][W-large]
 
 Other helpful pages:
 
