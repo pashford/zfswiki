@@ -6,7 +6,7 @@ The following commands will perform the required functions:
 ```
 $ cd zfs
 $ git checkout master
-$ git fetch upstream
+$ git fetch upstream master
 $ git branch (topic-branch-name)
 $ git checkout (topic-branch-name)
 ```
