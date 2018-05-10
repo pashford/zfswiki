@@ -25,7 +25,7 @@ $ ./autogen.sh
 cd ..
 ```
 
-The `./autogen.sh` script generates the build files.  If the build system is updated, either by the developer, or by another developer, these scripts need to be run again.
+The `./autogen.sh` script generates the build files.  If the build system is updated by any developer, these scripts need to be run again.
 
 [zol]: https://github.com/zfsonlinux
 [get-source]: https://github.com/zfsonlinux/zfs/wiki/Get-the-Source-Code
