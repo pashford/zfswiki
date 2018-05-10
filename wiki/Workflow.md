@@ -28,6 +28,7 @@ There are also a few *abnormal* workflow steps that occur from time to time:
 * [Fix conflicts][W-conflicts] **EMPTY**
 * [Close a PR][W-close-PR] **Incomplete**
 * [Adding large features][W-large]
+* [Adding a Test][W-create-test]
 
 Other helpful pages:
 
@@ -57,4 +58,5 @@ NOTE:  Many of the above links will be removed or relocated to a child page as t
 [W-conflicts]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Conflicts.md
 [W-close-PR]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Close-PR.md
 [W-large]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Large-Features.md
+[W-create-test]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-Test.md
 [W-delete-branch]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Delete-Branch.md
