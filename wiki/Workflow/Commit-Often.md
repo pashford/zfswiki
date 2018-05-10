@@ -6,7 +6,8 @@ In addition, it is suggested that the changes be pushed to your forked Github re
 
 Details of this process can be found in the [Commit the changes][W-commit] page.
 
-For developers who want to keep their development branches clean, it might be useful to [*squash*][W-squash] commits from time to time.
+For developers who want to keep their development branches clean, it might be useful to [*squash*][W-squash] commits from time to time, even before you're ready to [create a PR][W-create-PR].
 
 [W-commit]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Commit.md
 [W-squash]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Squash.md
+[W-create-PR]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-PR.md
