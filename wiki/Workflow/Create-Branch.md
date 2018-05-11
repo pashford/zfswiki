@@ -6,13 +6,15 @@ The following commands will perform the required functions:
 ```
 $ cd zfs
 $ git fetch upstream
+$ git merge HEAD
 $ git checkout master
 $ git branch (topic-branch-name)
 $ git checkout (topic-branch-name)
 ```
 
 1. Navigate to your *local*  repository.
-1. Update the clone from the main repository.
+1. Update the *.git* from the main repository.
+1. Update the *local* repository with the fetched updates.
 1. Set the current branch to *master*.
 1. Create a new *topic* branch on the updated *master* branch.  The name of the branch should be either the name of the feature (preferred for development of features) or an indication of the issue being worked on (preferred for bug fixes).
 1. Set the current branch to the newly created *topic* branch.
