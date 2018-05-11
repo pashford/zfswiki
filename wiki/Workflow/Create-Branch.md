@@ -13,8 +13,8 @@ $ git checkout (topic-branch-name)
 ```
 
 1. Navigate to your *local*  repository.
-1. Update the *.git* from the main repository.
-1. Update the *local* repository with the fetched updates.
+1. Fetch the updates from the upstream repository.
+1. Merge the fetched updates into the *local* repository.
 1. Set the current branch to *master*.
 1. Create a new *topic* branch on the updated *master* branch.  The name of the branch should be either the name of the feature (preferred for development of features) or an indication of the issue being worked on (preferred for bug fixes).
 1. Set the current branch to the newly created *topic* branch.
