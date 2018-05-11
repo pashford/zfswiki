@@ -6,4 +6,7 @@ There are two steps in the rebase process.  The first step is to update the *loc
 
 The second step is to perform the actual rebase of the updates.  This is done by entering the command `git rebase upstream/master`.  If there are any conflicts between the updates in your *local* branch and the updates in the *upstream master* branch, you will be informed of them, and allowed to correct them (see the [Conflicts][W-conflicts] page).
 
+This would also be a good time to [*squash*][W-squash] your commits.
+
 [W-conflicts]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Conflicts.md
+[W-squash]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Squash.md
