@@ -5,7 +5,7 @@ In order for your changes to be merged into the ZFS on Linux project, you must f
 The `-s` option adds a *signed off by* line to the commit.  This *signed off by* line is required for the ZFS on Linux project.  It performs the following functions:
 * It is an acceptance of the [License Terms][license] of the project.
 * It is the developer's certification that they have the right to submit the patch for inclusion into the code base.
-* It indicates agreement to the [Developer's Certificateof Origin][COA].
+* It indicates agreement to the [Developer's Certificate of Origin][COA].
 
 The `-a` option causes all modified files in the current branch to be *staged* prior to performing the commit.  A list of the modified files in the *local* branch can be created by the use of the `git status` command.  If there are files that have been modified that shouldn't be part of the commit, they can either be rolled back in the current branch, or the files can be manually staged with the `git add (file-name) ...` command, and the `git commit -s` command can be run without the `-a` option.
 
@@ -18,6 +18,7 @@ When you run the `git commit` command, an editor will appear to allow you to ent
   * The string "Signed-off-by:"
   * The name of the developer.  Please do not use any no pseudonyms or make any anonymous contributions.
   * The email address of the developer, enclosed by angle brackets ("<>").
+  * An example of this is `Signed-off-by: Random Developer <random@developer.example.org>`
 
 For more information about writing commit messages, please visit [How to Write a Git Commit Message][writing-commit-message].
 
