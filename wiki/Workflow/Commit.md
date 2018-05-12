@@ -13,6 +13,7 @@ When you run the `git commit` command, an editor will appear to allow you to ent
 * The first line is a title for the commit, and must be bo longer than 50 characters.
 * The second line should be blank, separating the title of the commit message from the body of the commit message.
 * There may be one or more lines in the commit message describing the reason for the changes (the body of the commit message).  These lines must be no longer than 72 characters, and may contain blank lines.
+  * If the commit closes an Issue, there should be a line in the body with the string `Closes`, followed by the issue number.
 * After the body of the commit message, there should be a blank line.  This separates the body from the *signed off by* line.
 * The *signed off by* line should have been created by the `git commit -s` command.  If not, the line has the following format:
   * The string "Signed-off-by:"
