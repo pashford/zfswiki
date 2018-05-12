@@ -5,17 +5,17 @@ With small projects, it's possible to develop code as commits directly on the *m
 The following commands will perform the required functions:
 ```
 $ cd zfs
-$ git fetch upstream
-$ git merge HEAD
+$ git fetch upstream/master
 $ git checkout master
+$ git merge upstream/master
 $ git branch (topic-branch-name)
 $ git checkout (topic-branch-name)
 ```
 
 1. Navigate to your *local*  repository.
 1. Fetch the updates from the upstream repository.
-1. Merge the fetched updates into the *local* repository.
 1. Set the current branch to *master*.
+1. Merge the fetched updates into the *local* repository.
 1. Create a new *topic* branch on the updated *master* branch.  The name of the branch should be either the name of the feature (preferred for development of features) or an indication of the issue being worked on (preferred for bug fixes).
 1. Set the current branch to the newly created *topic* branch.
 
