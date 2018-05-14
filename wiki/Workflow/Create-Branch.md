@@ -5,7 +5,7 @@ With small projects, it's possible to develop code as commits directly on the *m
 The following commands will perform the required functions:
 ```
 $ cd zfs
-$ git fetch upstream/master
+$ git fetch upstream master
 $ git checkout master
 $ git merge upstream/master
 $ git branch (topic-branch-name)
