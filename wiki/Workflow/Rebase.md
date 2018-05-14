@@ -5,7 +5,7 @@ Updates to the ZFS on Linux project should always be based on the current *maste
 There are two steps in the rebase process.  The first step is to update the *local master* branch from the *upstream master* repository.  This can be done by entering the following commands:
 
 ```
-$ git fetch upstream/master
+$ git fetch upstream master
 $ git checkout master
 $ git merge upstream/master
 ```
