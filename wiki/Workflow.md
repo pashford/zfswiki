@@ -12,7 +12,7 @@ The workflow used in the ZFS project is based on the Integration-Manager Workflo
    * [Create a Branch][W-create-branch]
    * Do:
        * Do:
-           * Make the appropriate changes to the software - Please remember to [commit often][W-often]
+           * Make the appropriate changes to the software, following the [Sytle Guide][style] - Please remember to [commit often][W-often]
            * [Test the changes][W-test]
            * [Rebase the changes][W-rebase] on the current *master* branch
            * [Commit the changes][W-commit] to your *topic* branch
@@ -42,6 +42,7 @@ NOTE:  Many of the above links will be removed or relocated to a child page as t
 
 [zol]: https://github.com/zfsonlinux/zfs
 [pro-git]: https://git-scm.com/book/en/v2
+[style]: http://www.cis.upenn.edu/~lee/06cse480/data/cstyle.ms.pdf
 [W-install]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Install-Git.md
 [W-github-account]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Create-Github-Account.md
 [W-get-code]: https://github.com/pashford/zfswiki/blob/master/wiki/Workflow/Get-Source.md
